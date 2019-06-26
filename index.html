@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--Trong phần này, chúng ta sẽ phát triển một ứng dụng cho phép hiển thị 20 số nguyên tố đầu tiên.-->
+<script>
+   function kiemtra(x) {
+       for(let i=2;i<Math.sqrt(x);i++){
+           if(x%i===0)
+               return 0;
+           return 1;
+       }
+   }
+   document.write("danh sách số nguyên tố: 2");
+for(let i=1;i<20;i++){
+    if(kiemtra(i)){
+        document.write(" "+i);
+    }
+}
+
+</script>
+</body>
+</html>
